@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Spotify token cache
+.spotify_token_cache
+
+# DS Store
+.DS_Store
+# macOS
+.venv/
+__pycache__/
+.cache
+*.pyc

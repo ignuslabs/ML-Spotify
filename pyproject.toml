@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "playlist-recommender"
+version = "0.1.0"
+description = "API service for playlist-aware song recommendations using Spotify data."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+  { include = "app" },
+  { include = "data" },
+  { include = "models" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+spotipy = "^2.23.0"
+pymongo = {extras = ["srv"], version = "^4.6.1"}
+pandas = "^2.1.4"
+python-dotenv = "^1.0.0"
+pyarrow = ">=12.0.0"
+implicit = ">=0.1.0"
+scipy = ">=1.11.0"
+faiss-cpu = "^1.11.0"
+boto3 = "^1.38.9"
+pydantic = "^2.11.4"
+pydantic-settings = "^2.9.1"
+lightgbm = "^4.6.0"
+certifi = "^2025.4.26"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^5.0.0"
+pre-commit = "^3.6.0"
+black = "^24.4.0"
+ruff = "^0.4.0"
+mypy = "^1.8.0"
+pytest-mock = "^3.12.0"
+cmake = "^3.27.0"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "W", "F", "I", "C", "B"]
+ignore = []
+target-version = "py311"
+
+[tool.ruff.lint.isort]
+known-first-party = ["app", "data", "models"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = true
+path = ".venv"
