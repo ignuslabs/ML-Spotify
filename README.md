@@ -10,7 +10,8 @@ latency budget.
 ## Quickstart
 1. Clone the repo:
    ```bash
-   git clone https://github.com/ignuslabs/ML-Spotify.git # or your fork
+   git clone https://github.com/ignuslabs/ML-Spotify.git
+   # For forks, replace with: https://github.com/<your-org>/ML-Spotify.git
    cd ML-Spotify
    ```
 2. Install dependencies:
@@ -43,7 +44,7 @@ poetry run python data/scripts/features.py compute-centroid
 ## Development Commands
 ```bash
 poetry run pre-commit run --all-files
-poetry run ruff check .
+poetry run ruff .
 poetry run black --check .
 poetry run mypy .
 poetry run pytest --cov=app --cov=data --cov=models --cov-report=term-missing
