@@ -12,6 +12,7 @@ venv/
 # Cache
 .cache/
 .pytest_cache/
+.coverage
 
 # Distribution / packaging
 build/
