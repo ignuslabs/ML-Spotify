@@ -10,7 +10,7 @@ latency budget.
 ## Quickstart
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-org>/ML-Spotify.git
+   git clone <repository-url>
    cd ML-Spotify
    ```
 2. Install dependencies:
