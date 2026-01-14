@@ -10,7 +10,7 @@ latency budget.
 ## Quickstart
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-org/ML-Spotify.git
+   git clone https://github.com/ignuslabs/ML-Spotify.git # or your fork
    cd ML-Spotify
    ```
 2. Install dependencies:
@@ -37,7 +37,7 @@ poetry run python data/scripts/build_ann.py --nlist 1000 --hnsw-m 32
 
 ### Compute playlist centroids
 ```bash
-poetry run python data/features.py
+poetry run python data/scripts/features.py compute-centroid
 ```
 
 ## Development Commands
